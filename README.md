@@ -1,7 +1,6 @@
-```markdown
+
 # Diet Plan API
 
-![License](https://img.shields.io/github/license/niharika797/MITIHAR)
 ![Python](https://img.shields.io/badge/Python-100%25-blue)
 
 ## 🌟 Overview
@@ -37,7 +36,7 @@ cd MITIHAR
 
 # 2. Create a virtual environment
 python -m venv venv
-source venv/bin/activate        # On Windows: venv\\Scripts\\activate
+source venv/bin/activate        # On Windows: venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -58,36 +57,38 @@ uvicorn app.main:app --reload
 ## 🔌 API Endpoints
 
 ### Auth
-- `POST /api/v1/auth/register` – Create a new user
-- `POST /api/v1/auth/login` – Authenticate user
+- `POST /api/v1/auth/register` – Create a new user  
+- `POST /api/v1/auth/login` – Authenticate user  
 
 ### User
-- `GET /api/v1/users/me` – Fetch logged-in user data
+- `GET /api/v1/users/me` – Fetch logged-in user data  
 
 ### Diet Plans
-- `POST /api/v1/diet-plans` – Generate a diet plan
-- `GET /api/v1/diet-plans/{id}` – Fetch diet plan by ID
+- `POST /api/v1/diet-plans` – Generate a diet plan  
+- `GET /api/v1/diet-plans/{id}` – Fetch diet plan by ID  
 
 ### Meals
-- `POST /api/v1/meal-plan` – Generate meal plan
+- `POST /api/v1/meal-plan` – Generate meal plan  
 
 ### Progress
-- `POST /api/v1/progress` – Log weight/progress
-- `GET /api/v1/progress` – Retrieve user progress
+- `POST /api/v1/progress` – Log weight/progress  
+- `GET /api/v1/progress` – Retrieve user progress  
 
 ---
 
 ## 📬 Sample Requests
 
+### Register a new user
 ```bash
-# Register a new user
-curl -X POST "http://localhost:8000/api/v1/auth/register" \\
-     -H "Content-Type: application/json" \\
+curl -X POST "http://localhost:8000/api/v1/auth/register" \
+     -H "Content-Type: application/json" \
      -d '{"email": "user@example.com", "password": "securepass"}'
+```
 
-# Create diet plan
-curl -X POST "http://localhost:8000/api/v1/diet-plans" \\
-     -H "Authorization: Bearer <your_token>" \\
+### Create diet plan
+```bash
+curl -X POST "http://localhost:8000/api/v1/diet-plans" \
+     -H "Authorization: Bearer <your_token>" \
      -d '{"preferences": {...}, "activity_level": "moderate"}'
 ```
 
@@ -107,17 +108,14 @@ We love contributions! 🎉
 
 ## 📄 License
 
-Licensed under the [MIT License](LICENSE).
+Licensed under the MIT License.
 
 ---
 
 ## 🙏 Acknowledgements
 
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Pydantic](https://docs.pydantic.dev/)
+- FastAPI  
+- MongoDB  
+- Pydantic  
 
----
-
-> Built with 💚 for healthier lives.
-```
+Built with 💚 for healthier lives.
