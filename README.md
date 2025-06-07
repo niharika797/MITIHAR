@@ -5,18 +5,18 @@
 
 ## 🌟 Overview
 
-The **Diet Plan API** is a smart, web-based application built to generate personalized diet plans tailored to individual user needs. It combines the power of modern web technologies with data science to help users achieve their nutrition goals effectively.
+The AI-based diet recommender system **MITIHAR** is a smart application built to generate personalized diet plans tailored to individual user needs according to their dietry preferences and health needs.
 
-Built with **FastAPI** and **MongoDB**, it ensures performance, scalability, and flexibility.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **JWT Authentication** – Secure login and registration.
-- 🥗 **Smart Diet Plan Generator** – Personalized plans based on preferences and activity.
+- 🥗 **Smart Diet Plan Generator** – Personalized plans based on preferences and activity levels
 - 🍽 **Meal Planning Engine** – Meal selection based on nutritional targets.
-- 📊 **Progress Tracker** – Logs weight and user progress.
+- 📊 **Progress Tracker** – Synced with GoogleFit API to track your daily progess.
+- 🥗 **Dynamic adjustment** - The app adjusts the extra calories in the diet plan just on uploading a picture.
+- 🍽 **Meal Authentication** - Prompts user to upload picture of food consumed for better authentication.
 - ⚡ **Fast & Async** – Powered by FastAPI, Pydantic, and asynchronous MongoDB queries.
 
 ---
